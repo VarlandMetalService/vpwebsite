@@ -261,7 +261,8 @@ html, body, .vp-cta-container .card, .vp-cta-container .card-footer a {
  * Main content.
  */
 #vp-content {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  min-height: 100vh; }
   #vp-content p {
     line-height: 1.3; }
 
