@@ -34,13 +34,12 @@ $ ->
       items: 1
       nav: false
       dots: true
-      autoplay: true
-      autoplayHoverPause: true
       loop: true
     owl_md =
       items: 2
       nav: false
       dots: true
+      loop: true
     owl_lg =
       items: 4
       nav: false
