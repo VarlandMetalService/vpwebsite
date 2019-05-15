@@ -10,13 +10,13 @@
 #vp-image-header-content p, #vp-video-header-content {
   font-family: GothamCondensed-Light, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-html, body, .vp-cta-container .card, .vp-cta-container .card-title, .vp-cta-container .card-footer a {
+html, body, .vp-cta-container .card, .vp-cta-container .card-footer a {
   font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 #vp-secondary-nav .nav-link {
   font-family: GothamCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-#vp-primary-nav .nav-link, #vp-image-header-content h1, #vp-video-header-content a {
+#vp-primary-nav .nav-link, #vp-image-header-content h1, #vp-video-header-content a, .vp-cta-container .card-title {
   font-family: GothamCondensed-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 /**

@@ -403,7 +403,7 @@ html, body {
   }
   .card-title {
     text-transform: uppercase;
-    @extend %brand-font-book;
+    @extend %brand-font-bold;
     font-size: 2rem;
     line-height: 1;
     text-align: center;
