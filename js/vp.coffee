@@ -22,6 +22,12 @@ handleScroll = (nav, marker) ->
     else
       nav.removeClass("vp-nav-scroll")
 
+loadVideo = ->
+  header = $("#vp-video-header video")
+  width = $(window).width()
+  if header.length > 0 && width >= 768
+    header.html("<source src=\"" + header.data("video") + "\" type=\"video/mp4\">")
+
 $ ->
   try
     owl_xs =
@@ -54,3 +60,4 @@ $ ->
       handleScroll(nav, marker)
     $(window).on "resize", ->
       handleScroll(nav, marker)
+  loadVideo()

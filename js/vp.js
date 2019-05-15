@@ -1,5 +1,5 @@
 (function() {
-  var getMarker, handleScroll;
+  var getMarker, handleScroll, loadVideo;
 
   getMarker = function() {
     var marker;
@@ -30,6 +30,15 @@
       } else {
         return nav.removeClass("vp-nav-scroll");
       }
+    }
+  };
+
+  loadVideo = function() {
+    var header, width;
+    header = $("#vp-video-header video");
+    width = $(window).width();
+    if (header.length > 0 && width >= 768) {
+      return header.html("<source src=\"" + header.data("video") + "\" type=\"video/mp4\">");
     }
   };
 
@@ -71,10 +80,11 @@
       $(window).on("scroll", function() {
         return handleScroll(nav, marker);
       });
-      return $(window).on("resize", function() {
+      $(window).on("resize", function() {
         return handleScroll(nav, marker);
       });
     }
+    return loadVideo();
   });
 
 }).call(this);
