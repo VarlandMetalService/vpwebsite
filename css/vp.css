@@ -157,10 +157,16 @@ html, body, .vp-cta-container .card, .vp-cta-container .card-title, .vp-cta-cont
   z-index: 0; }
   #vp-video-header video {
     display: none; }
-  #vp-video-header + section {
-    -webkit-box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.75); }
+
+#vp-video-header-shadow {
+  -webkit-box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+  z-index: 999 !important;
+  position: relative;
+  height: 1rem;
+  background-color: transparent;
+  margin-top: -1rem; }
 
 #vp-video-header-content {
   position: absolute;
