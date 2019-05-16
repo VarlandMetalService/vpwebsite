@@ -28,7 +28,7 @@ body {
 .btn-brand {
 
     background-color: $brand-red;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
 
     &:hover, &:active {

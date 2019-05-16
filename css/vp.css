@@ -45,7 +45,7 @@ body {
  */
 .btn-brand {
   background-color: #df151a;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer; }
   .btn-brand:hover, .btn-brand:active {
     background: #df151a url(../images/pattern.png) center center repeat; }

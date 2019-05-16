@@ -16,7 +16,7 @@
 .dropdown-menu p {
   font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-.nav-item .nav-link, .dropdown-menu, .dropdown-menu a {
+.nav-item .nav-link, .dropdown-menu, .dropdown-menu label, .dropdown-menu button, .dropdown-menu a {
   font-family: GothamCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 #vp-site-nav .vp-nav-overlay {
@@ -89,10 +89,6 @@ body {
 #vp-site-secondary-nav .nav-link {
   font-size: 1.25rem; }
 
-#vp-nav-collapsible-content {
-  max-height: 30rem;
-  overflow-y: scroll; }
-
 .dropdown-menu {
   -webkit-box-shadow: inset 0px 0 0.25rem 0 #000;
   -moz-box-shadow: inset 0px 0 0.25rem 0 #000;
@@ -126,6 +122,21 @@ body {
     text-shadow: 0px 0px 3px #000000; }
     .dropdown-menu p:last-child {
       margin-bottom: 0; }
+  .dropdown-menu label {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    text-shadow: 0px 0px 3px #000000; }
+  .dropdown-menu small {
+    font-size: 1rem; }
+  .dropdown-menu input, .dropdown-menu textarea {
+    font-size: 1.25rem; }
+  .dropdown-menu button {
+    color: #fff;
+    font-size: 1.25rem;
+    text-shadow: 0px 0px 3px #000000;
+    text-transform: uppercase; }
   .dropdown-menu a {
     color: #fff;
     font-size: 1.25rem;
