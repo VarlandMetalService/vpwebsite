@@ -9,6 +9,8 @@
  */
 
 // Image header.
+$image-header-content-height-xs: 12rem;
+$image-header-content-height-sm: 12rem;
 $image-header-content-height-md: 12rem;
 $image-header-content-height-lg: 12rem;
 $image-header-content-height-xl: 12rem;
@@ -17,6 +19,8 @@ $image-shape-width-md: ($image-header-content-height-md / $image-header-content-
 $image-shape-width-lg: ($image-header-content-height-lg / $image-header-content-height-xl) * $image-shape-width-xl;
 
 // Video header.
+$video-header-content-height-xs: 18rem;
+$video-header-content-height-sm: 18rem;
 $video-header-content-height-md: 21rem;
 $video-header-content-height-lg: 18rem;
 $video-header-content-height-xl: 16rem;
@@ -49,6 +53,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
+        height: $image-header-content-height-xs;
         margin-bottom: 2rem;
         overflow: auto;
 
@@ -66,10 +71,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-image-header-left-overlay-bg {
 
-            @extend %abs-left;
-
             background: url(../images/texture.png) 50% 50%/6px 6px repeat;
-            display: none;
             z-index: 1;
             
         }
@@ -85,8 +87,17 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-image-header-text {
 
-            margin: 1rem auto;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 0;
+            margin: 0;
+            padding: 1rem 2rem;
+            position: absolute;
+            right: 0;
             text-align: center;
+            top: 0;
             z-index: 2;
 
             h1 {
@@ -121,6 +132,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
+        height: $video-header-content-height-xs;
         margin-bottom: 1.75rem;
         overflow: auto;
 
@@ -160,10 +172,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-cta-video-left-overlay-bg {
 
-            @extend %abs-left;
-
             background: url(../images/texture.png) 50% 50%/6px 6px repeat;
-            display: none;
             z-index: 1;
             
         }
@@ -179,7 +188,16 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-cta-video-text {
 
-            margin: 1rem auto;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 0;
+            margin: 0;
+            padding: 1rem 2rem;
+            position: absolute;
+            right: 0;
+            top: 0;
             z-index: 2;
 
             p {
@@ -319,6 +337,12 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
     
             }
 
+            .vp-image-header-left-overlay-bg {
+
+                width: 50% !important;
+
+            }
+
             .vp-image-header-right-overlay-fg {
     
                 border-bottom: ($image-header-content-height-md / 2) solid transparent;
@@ -329,17 +353,8 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             .vp-image-header-text {
 
-                bottom: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                left: 0;
-                margin: 0;
-                padding: 1rem 2rem;
-                position: absolute;
                 right: 50%;
                 text-align: left;
-                top: 0;
 
             }
 
@@ -354,6 +369,12 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             .vp-cta-video, .vp-cta-video-left-overlay-bg, .vp-cta-video-right-overlay-bg {
 
                 display: block;
+
+            }
+
+            .vp-cta-video-left-overlay-bg {
+
+                width: 50%;
 
             }
 
