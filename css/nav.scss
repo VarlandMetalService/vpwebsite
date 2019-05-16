@@ -113,6 +113,13 @@ body {
 
 }
 
+#vp-nav-collapsible-content {
+
+  max-height: 30rem;
+  overflow-y: scroll;
+
+}
+
 .dropdown-menu {
 
   @extend %brand-font-medium;

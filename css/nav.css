@@ -89,6 +89,10 @@ body {
 #vp-site-secondary-nav .nav-link {
   font-size: 1.25rem; }
 
+#vp-nav-collapsible-content {
+  max-height: 30rem;
+  overflow-y: scroll; }
+
 .dropdown-menu {
   -webkit-box-shadow: inset 0px 0 0.25rem 0 #000;
   -moz-box-shadow: inset 0px 0 0.25rem 0 #000;

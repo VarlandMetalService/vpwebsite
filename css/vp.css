@@ -37,7 +37,8 @@ body {
  * Base tags.
  */
 body {
-  background: #fff url(../images/pattern.png) 50% 50% repeat; }
+  background: #fff url(../images/pattern.png) 50% 50% repeat;
+  overflow: auto; }
 
 /**
  * Brand specific classes.
