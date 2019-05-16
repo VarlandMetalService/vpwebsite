@@ -106,12 +106,14 @@
         font-size: 2.5rem;
         line-height: 1;
         margin-bottom: 0;
+        text-shadow: 0px 0px 3px #000000;
         text-transform: uppercase; }
       #vp-header .vp-image-header .vp-image-header-text p {
         font-size: 1.25rem;
         line-height: 1.25;
         margin-bottom: 0;
-        margin-top: 0.25rem; }
+        margin-top: 0.25rem;
+        text-shadow: 0px 0px 3px #000000; }
   #vp-header .vp-cta-video-header {
     -webkit-box-shadow: 0px 0 2px 0 #000;
     -moz-box-shadow: 0px 0 2px 0 #000;
@@ -156,7 +158,8 @@
       #vp-header .vp-cta-video-header .vp-cta-video-text p {
         font-size: 1.5rem;
         line-height: 1.25;
-        text-align: center; }
+        text-align: center;
+        text-shadow: 0px 0px 3px #000000; }
         #vp-header .vp-cta-video-header .vp-cta-video-text p a {
           color: #df151a;
           text-decoration: none;
