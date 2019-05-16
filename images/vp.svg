@@ -8,10 +8,6 @@
         fill: #df151a;
         filter: url(#shadow);
       }
-      .cls-1, .cls-2, .cls-3 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
       .cls-2 {
         fill: #fff;
         filter: url(#shadow);
