@@ -36,5 +36,7 @@ body {
 /**
  * Base tags.
  */
+body {
+  background: #fff url(../images/pattern.png) 50% 50% repeat; }
 
 /*# sourceMappingURL=vp.css.map */
