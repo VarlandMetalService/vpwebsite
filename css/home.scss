@@ -44,7 +44,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     background-image: linear-gradient(to bottom, $light-gradient-top, $light-gradient-bottom);
     overflow: auto;
-    padding: 2rem 1rem 1.75rem;
+    padding: 2.25rem 1rem 1.75rem;
     position: relative;
 
     .vp-image-header {
@@ -54,7 +54,6 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
         background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
         height: $image-header-content-height-xs;
-        margin-bottom: 2rem;
         overflow: auto;
 
         .vp-image-header-left-overlay-bg, .vp-image-header-right-overlay-bg, .vp-image-header-left-overlay-fg, .vp-image-header-right-overlay-fg {

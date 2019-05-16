@@ -72,7 +72,7 @@
 #vp-header {
   background-image: linear-gradient(to bottom, #888888, #fff);
   overflow: auto;
-  padding: 2rem 1rem 1.75rem;
+  padding: 2.25rem 1rem 1.75rem;
   position: relative; }
   #vp-header .vp-image-header {
     -webkit-box-shadow: 0px 0 2px 0 #000;
@@ -81,7 +81,6 @@
     background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     color: #fff;
     height: 12rem;
-    margin-bottom: 2rem;
     overflow: auto; }
     #vp-header .vp-image-header .vp-image-header-left-overlay-bg {
       background: url(../images/texture.png) 50% 50%/6px 6px repeat;
