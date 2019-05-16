@@ -67,7 +67,7 @@
  * Extra small screen size.
  */
 #vp-header-overlay {
-  background: transparent url(../images/pattern.png) 50% 50%/55px 55px repeat; }
+  background: transparent url(../images/pattern.png) 50% 50% repeat; }
 
 #vp-header {
   background-image: linear-gradient(to bottom, #888888, #fff);
