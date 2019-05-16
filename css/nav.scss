@@ -154,6 +154,12 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 
+    &:hover {
+
+      color: $brand-red;
+
+    }
+
   }
 
   .vp-nav-overlay {

@@ -110,6 +110,8 @@ body {
     font-size: 1.25rem;
     text-decoration: none;
     text-transform: uppercase; }
+    .dropdown-menu a:hover {
+      color: #df151a; }
   .dropdown-menu .vp-nav-overlay {
     display: none; }
 
