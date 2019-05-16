@@ -19,3 +19,21 @@ body {
     background: #fff url(../images/pattern.png) 50% 50% repeat;
     
 }
+
+/**
+ * Brand specific classes.
+ */
+
+.btn-brand {
+
+    background-color: $brand-red;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover, &:active {
+
+        background: $brand-red url(../images/pattern.png) center center repeat;
+
+    }
+
+}

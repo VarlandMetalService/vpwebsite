@@ -39,4 +39,14 @@ body {
 body {
   background: #fff url(../images/pattern.png) 50% 50% repeat; }
 
+/**
+ * Brand specific classes.
+ */
+.btn-brand {
+  background-color: #df151a;
+  color: #fff;
+  cursor: pointer; }
+  .btn-brand:hover, .btn-brand:active {
+    background: #df151a url(../images/pattern.png) center center repeat; }
+
 /*# sourceMappingURL=vp.css.map */
