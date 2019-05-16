@@ -13,7 +13,10 @@
   top: 0;
   width: 100%; }
 
-.nav-item .nav-link {
+.dropdown-menu p {
+  font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.nav-item .nav-link, .dropdown-menu, .dropdown-menu a {
   font-family: GothamCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 #vp-site-nav .vp-nav-overlay {
@@ -92,8 +95,21 @@ body {
   background: url(../images/texture.png) 50% 50%/6px 6px repeat;
   border-radius: 0.25rem !important;
   color: #fff;
-  min-height: 5rem;
-  padding: 0; }
+  padding: 1rem 0; }
+  .dropdown-menu h5 {
+    border-bottom: 0.1rem solid #df151a;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .dropdown-menu p {
+    font-size: 1.25rem;
+    line-height: 1.2; }
+    .dropdown-menu p:last-child {
+      margin-bottom: 0; }
+  .dropdown-menu a {
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase; }
   .dropdown-menu .vp-nav-overlay {
     display: none; }
 
@@ -122,8 +138,13 @@ body {
     border-bottom: 0.25rem solid #df151a;
     border-radius: 0 !important;
     margin-top: -0.25rem;
+    overflow: auto;
+    padding-top: 0;
     top: 100%;
     width: 100%; }
+    .dropdown-menu .container {
+      position: relative;
+      z-index: 2; }
     .dropdown-menu .vp-nav-overlay {
       display: block; } }
 /**
@@ -134,6 +155,13 @@ body {
     font-size: 2rem; }
 
   #vp-site-secondary-nav .nav-link {
+    font-size: 1.5rem; }
+
+  .dropdown-menu h5 {
+    font-size: 2rem; }
+  .dropdown-menu p {
+    font-size: 1.5rem; }
+  .dropdown-menu a {
     font-size: 1.5rem; } }
 
 /*# sourceMappingURL=nav.css.map */
