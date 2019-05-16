@@ -1,0 +1,314 @@
+/**
+ * Import variables.
+ */
+
+ @import "variables";
+
+ /**
+  * Variable definitions.
+  */
+
+// Video header.
+$video-header-content-height-md: 19rem;
+$video-header-content-height-lg: 16rem;
+$video-header-content-height-xl: 14rem;
+$video-shape-width-md: ($video-header-content-height-md / $video-header-content-height-xl) * 2rem;
+$video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-height-xl) * 2rem;
+$video-shape-width-xl: 2rem;
+
+ /**
+  * Extra small screen size.
+  */
+
+#vp-cta {
+
+    background-image: linear-gradient(to bottom, $light-gradient-top, $light-gradient-bottom);
+    overflow: auto;
+    padding: 2rem 1rem;
+
+    .vp-cta-video-header {
+
+        @include shadow(0px 0 2px 0 #000);
+
+        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;    
+        color: #fff;
+        margin-bottom: 1.75rem;
+        overflow: auto;
+
+        .vp-cta-video, .vp-cta-video-left-overlay-bg, .vp-cta-video-right-overlay-bg, .vp-cta-video-left-overlay-fg, .vp-cta-video-right-overlay-fg {
+
+            @extend %abs-full;
+
+        }
+
+        .vp-cta-video-left-overlay-fg {
+
+            @extend %ltr-gradient;
+
+        }
+
+        .vp-cta-video {
+
+            display: none;
+            overflow: hidden;
+            z-index: 0;
+
+            video {
+
+                left: 50%;
+                height: auto;
+                min-height: 100%;
+                min-width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: auto;
+                z-index: -1;
+
+            }
+
+        }
+
+        .vp-cta-video-left-overlay-bg {
+
+            @extend %abs-left;
+
+            background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+            display: none;
+            z-index: 1;
+            
+        }
+
+        .vp-cta-video-right-overlay-bg {
+
+            @extend %abs-right;
+
+            background: url(../images/50.png) center center repeat;
+            display: none;
+            z-index: 1;
+            
+        }
+
+        .vp-cta-video-text {
+
+            margin: 1rem auto;
+            z-index: 2;
+
+            p {
+                
+                font-size: 1.5rem;
+                line-height: 1.25;
+                text-align: center;
+
+                a {
+
+                    @extend %brand-font-bold;
+
+                    color: $brand-red;
+                    text-decoration: none;
+
+                }
+
+            }
+
+            p:last-child {
+                
+                margin-bottom: 0;
+
+            }
+            
+        }
+
+    }
+    
+}
+
+.vp-cta-container {
+
+    margin: 0.25rem 0;
+
+    .card {
+
+        @extend %brand-font-book;
+        @include shadow(0 0 2px 0 #000);
+
+        background: #000;
+        border: none !important;
+        border-radius: 0 !important;
+        color: #fff;
+
+    }
+
+    .card-img-top {
+
+        border-radius: 0 !important;
+        position: relative;
+
+        .vp-cta-card-image-overlay {
+
+            @extend %abs-full;
+
+            border-bottom: 2rem solid #000;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            border-top: 2rem solid #000;
+
+        }
+
+    }
+
+    .card-title {
+
+        @extend %brand-font-bold;
+
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .card-text {
+
+        font-size: 1.25rem;
+        line-height: 1.2;
+
+    }
+
+    .card-footer {
+
+        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+        border: none !important;
+        overflow: auto;
+        padding: 0;
+        position: relative;
+
+        a {
+
+            @extend %brand-font-book;
+            @extend %ltr-gradient-half;
+
+            color: #fff;
+            display: block;
+            font-size: 1.5rem;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0px 0px 3px #000000;
+            text-transform: uppercase;
+            
+            &:hover i {
+
+                color: $brand-red;
+
+            }
+
+        }
+
+    }
+
+}
+
+/**
+ * Medium screen size.
+ */
+
+@media (min-width: $screen-md) {
+
+    #vp-cta {
+
+        .vp-cta-video-header {
+
+            background: transparent url(../images/bg.jpg) no-repeat right center;
+            background-size: cover;
+            height: $video-header-content-height-md;
+
+            .vp-cta-video, .vp-cta-video-left-overlay-bg, .vp-cta-video-right-overlay-bg {
+
+                display: block;
+
+            }
+
+            .vp-cta-video-right-overlay-fg {
+    
+                border-bottom: ($video-header-content-height-md / 2) solid transparent;
+                border-left: $video-shape-width-md solid #000;
+                border-right: $video-shape-width-md solid #000;
+                border-top: ($video-header-content-height-md / 2) solid transparent;
+    
+            }
+
+            .vp-cta-video-text {
+
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                left: 0;
+                margin: 0;
+                padding: 1rem 2rem;
+                position: absolute;
+                right: 50%;
+                top: 0;
+
+            }
+
+        }
+
+    }
+
+}
+
+/**
+ * Large screen size.
+ */
+
+@media (min-width: $screen-lg) {
+
+    #vp-cta {
+
+        .vp-cta-video-header {
+
+            height: $video-header-content-height-lg;
+
+            .vp-cta-video-right-overlay-fg {
+    
+                border-bottom: ($video-header-content-height-lg / 2) solid transparent;
+                border-left: $video-shape-width-lg solid #000;
+                border-right: $video-shape-width-lg solid #000;
+                border-top: ($video-header-content-height-lg / 2) solid transparent;
+    
+            }
+
+        }
+
+    }
+
+}
+
+/**
+ * Large screen size.
+ */
+
+@media (min-width: $screen-xl) {
+
+    #vp-cta {
+
+        .vp-cta-video-header {
+
+            height: $video-header-content-height-xl;
+
+            .vp-cta-video-right-overlay-fg {
+    
+                border-bottom: ($video-header-content-height-xl / 2) solid transparent;
+                border-left: $video-shape-width-xl solid #000;
+                border-right: $video-shape-width-xl solid #000;
+                border-top: ($video-header-content-height-xl / 2) solid transparent;
+    
+            }
+
+        }
+
+    }
+
+}

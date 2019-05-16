@@ -1,0 +1,214 @@
+/**
+ * Import variables.
+ */
+/**
+ * Variable definitions.
+ */
+#vp-cta .vp-cta-video-header .vp-cta-video, #vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-bg, #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-bg, #vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-fg, #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-fg, .vp-cta-container .card-img-top .vp-cta-card-image-overlay {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+#vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-bg {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%; }
+
+#vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-bg {
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%; }
+
+.vp-cta-container .card, .vp-cta-container .card-footer a {
+  font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+#vp-cta .vp-cta-video-header .vp-cta-video-text p a, .vp-cta-container .card-title {
+  font-family: GothamCondensed-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+#vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-fg {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
+
+.vp-cta-container .card-footer a {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
+
+/**
+ * Web font definitions.
+ */
+@font-face {
+  font-family: 'GothamCondensed-Bold';
+  src: url("../fonts/GothamCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Bold.otf") format("opentype"), url("../fonts/GothamCondensed-Bold.woff") format("woff"), url("../fonts/GothamCondensed-Bold.ttf") format("truetype"), url("../fonts/GothamCondensed-Bold.svg#GothamCondensed-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Light';
+  src: url("../fonts/GothamCondensed-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Light.otf") format("opentype"), url("../fonts/GothamCondensed-Light.woff") format("woff"), url("../fonts/GothamCondensed-Light.ttf") format("truetype"), url("../fonts/GothamCondensed-Light.svg#GothamCondensed-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Medium';
+  src: url("../fonts/GothamCondensed-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Medium.otf") format("opentype"), url("../fonts/GothamCondensed-Medium.woff") format("woff"), url("../fonts/GothamCondensed-Medium.ttf") format("truetype"), url("../fonts/GothamCondensed-Medium.svg#GothamCondensed-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Book';
+  src: url("../fonts/GothamCondensed-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Book.otf") format("opentype"), url("../fonts/GothamCondensed-Book.woff") format("woff"), url("../fonts/GothamCondensed-Book.ttf") format("truetype"), url("../fonts/GothamCondensed-Book.svg#GothamCondensed-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/**
+ * Variable definitions.
+ */
+/**
+ * Extra small screen size.
+ */
+#vp-cta {
+  background-image: linear-gradient(to bottom, #999999, #fff);
+  overflow: auto;
+  padding: 2rem 1rem; }
+  #vp-cta .vp-cta-video-header {
+    -webkit-box-shadow: 0px 0 2px 0 #000;
+    -moz-box-shadow: 0px 0 2px 0 #000;
+    box-shadow: 0px 0 2px 0 #000;
+    background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+    color: #fff;
+    margin-bottom: 1.75rem;
+    overflow: auto; }
+    #vp-cta .vp-cta-video-header .vp-cta-video {
+      display: none;
+      overflow: hidden;
+      z-index: 0; }
+      #vp-cta .vp-cta-video-header .vp-cta-video video {
+        left: 50%;
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: auto;
+        z-index: -1; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-bg {
+      background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+      display: none;
+      z-index: 1; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-bg {
+      background: url(../images/50.png) center center repeat;
+      display: none;
+      z-index: 1; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-text {
+      margin: 1rem auto;
+      z-index: 2; }
+      #vp-cta .vp-cta-video-header .vp-cta-video-text p {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        text-align: center; }
+        #vp-cta .vp-cta-video-header .vp-cta-video-text p a {
+          color: #df151a;
+          text-decoration: none; }
+      #vp-cta .vp-cta-video-header .vp-cta-video-text p:last-child {
+        margin-bottom: 0; }
+
+.vp-cta-container {
+  margin: 0.25rem 0; }
+  .vp-cta-container .card {
+    -webkit-box-shadow: 0 0 2px 0 #000;
+    -moz-box-shadow: 0 0 2px 0 #000;
+    box-shadow: 0 0 2px 0 #000;
+    background: #000;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff; }
+  .vp-cta-container .card-img-top {
+    border-radius: 0 !important;
+    position: relative; }
+    .vp-cta-container .card-img-top .vp-cta-card-image-overlay {
+      border-bottom: 2rem solid #000;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-top: 2rem solid #000; }
+  .vp-cta-container .card-title {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase; }
+  .vp-cta-container .card-text {
+    font-size: 1.25rem;
+    line-height: 1.2; }
+  .vp-cta-container .card-footer {
+    background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+    border: none !important;
+    overflow: auto;
+    padding: 0;
+    position: relative; }
+    .vp-cta-container .card-footer a {
+      color: #fff;
+      display: block;
+      font-size: 1.5rem;
+      padding: 0.75rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0px 0px 3px #000000;
+      text-transform: uppercase; }
+      .vp-cta-container .card-footer a:hover i {
+        color: #df151a; }
+
+/**
+ * Medium screen size.
+ */
+@media (min-width: 768px) {
+  #vp-cta .vp-cta-video-header {
+    background: transparent url(../images/bg.jpg) no-repeat right center;
+    background-size: cover;
+    height: 19rem; }
+    #vp-cta .vp-cta-video-header .vp-cta-video, #vp-cta .vp-cta-video-header .vp-cta-video-left-overlay-bg, #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-bg {
+      display: block; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-fg {
+      border-bottom: 9.5rem solid transparent;
+      border-left: 2.7142857143rem solid #000;
+      border-right: 2.7142857143rem solid #000;
+      border-top: 9.5rem solid transparent; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-text {
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      margin: 0;
+      padding: 1rem 2rem;
+      position: absolute;
+      right: 50%;
+      top: 0; } }
+/**
+ * Large screen size.
+ */
+@media (min-width: 992px) {
+  #vp-cta .vp-cta-video-header {
+    height: 16rem; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-fg {
+      border-bottom: 8rem solid transparent;
+      border-left: 2.2857142857rem solid #000;
+      border-right: 2.2857142857rem solid #000;
+      border-top: 8rem solid transparent; } }
+/**
+ * Large screen size.
+ */
+@media (min-width: 1200px) {
+  #vp-cta .vp-cta-video-header {
+    height: 14rem; }
+    #vp-cta .vp-cta-video-header .vp-cta-video-right-overlay-fg {
+      border-bottom: 7rem solid transparent;
+      border-left: 2rem solid #000;
+      border-right: 2rem solid #000;
+      border-top: 7rem solid transparent; } }
+
+/*# sourceMappingURL=home.css.map */
