@@ -1,0 +1,138 @@
+/**
+ * Import variables.
+ */
+/**
+ * Variable definitions.
+ */
+#vp-site-nav .vp-nav-overlay {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+.nav-link {
+  font-family: GothamCondensed-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+#vp-site-nav .vp-nav-overlay {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
+
+/**
+ * Web font definitions.
+ */
+@font-face {
+  font-family: 'GothamCondensed-Bold';
+  src: url("../fonts/GothamCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Bold.otf") format("opentype"), url("../fonts/GothamCondensed-Bold.woff") format("woff"), url("../fonts/GothamCondensed-Bold.ttf") format("truetype"), url("../fonts/GothamCondensed-Bold.svg#GothamCondensed-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Light';
+  src: url("../fonts/GothamCondensed-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Light.otf") format("opentype"), url("../fonts/GothamCondensed-Light.woff") format("woff"), url("../fonts/GothamCondensed-Light.ttf") format("truetype"), url("../fonts/GothamCondensed-Light.svg#GothamCondensed-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Medium';
+  src: url("../fonts/GothamCondensed-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Medium.otf") format("opentype"), url("../fonts/GothamCondensed-Medium.woff") format("woff"), url("../fonts/GothamCondensed-Medium.ttf") format("truetype"), url("../fonts/GothamCondensed-Medium.svg#GothamCondensed-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GothamCondensed-Book';
+  src: url("../fonts/GothamCondensed-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamCondensed-Book.otf") format("opentype"), url("../fonts/GothamCondensed-Book.woff") format("woff"), url("../fonts/GothamCondensed-Book.ttf") format("truetype"), url("../fonts/GothamCondensed-Book.svg#GothamCondensed-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/**
+ * Variable definitions.
+ */
+/**
+ * Extra small screen size.
+ */
+body {
+  padding-top: 6rem; }
+
+#vp-site-nav {
+  -webkit-box-shadow: 0px 3px 5px -4px #000;
+  -moz-box-shadow: 0px 3px 5px -4px #000;
+  box-shadow: 0px 3px 5px -4px #000;
+  background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+  border-bottom: 0.25rem solid #df151a;
+  min-height: 6rem;
+  padding: 1rem; }
+  #vp-site-nav .vp-nav-overlay {
+    z-index: 1; }
+  #vp-site-nav .navbar-brand, #vp-site-nav .navbar-toggler, #vp-site-nav .navbar-collapse {
+    z-index: 3; }
+
+.navbar-brand {
+  height: 4rem;
+  padding: 0 !important; }
+  .navbar-brand img {
+    display: block;
+    height: 100%; }
+
+.nav-link {
+  color: #fff !important;
+  line-height: 1;
+  padding-bottom: 0;
+  text-transform: uppercase; }
+
+#vp-site-primary-nav .nav-link {
+  font-size: 1.5rem; }
+
+#vp-site-secondary-nav .nav-link {
+  font-size: 1.25rem; }
+
+.dropdown-menu {
+  -webkit-box-shadow: inset 0px 0 0.5rem 0 #000;
+  -moz-box-shadow: inset 0px 0 0.5rem 0 #000;
+  box-shadow: inset 0px 0 0.5rem 0 #000;
+  background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+  border: 0.1rem solid #df151a;
+  border-radius: 0.25rem !important;
+  color: #fff;
+  min-height: 5rem;
+  padding: 0; }
+  .dropdown-menu .vp-nav-overlay {
+    display: none; }
+
+/**
+ * Medium screen size.
+ */
+@media (min-width: 768px) {
+  body {
+    padding-top: 8rem; }
+
+  #vp-site-nav {
+    min-height: 8rem; }
+
+  .navbar-brand {
+    height: 6rem;
+    margin-right: 3rem; }
+
+  .dropdown {
+    position: static; }
+
+  .dropdown-menu {
+    -webkit-box-shadow: 0px 3px 5px -4px #000;
+    -moz-box-shadow: 0px 3px 5px -4px #000;
+    box-shadow: 0px 3px 5px -4px #000;
+    border: none;
+    border-bottom: 0.25rem solid #df151a;
+    border-radius: 0 !important;
+    margin-top: -0.25rem;
+    top: 100%;
+    width: 100%; }
+    .dropdown-menu .vp-nav-overlay {
+      display: block; } }
+/**
+ * Large screen size.
+ */
+@media (min-width: 992px) {
+  #vp-site-primary-nav .nav-link {
+    font-size: 2rem; }
+
+  #vp-site-secondary-nav .nav-link {
+    font-size: 1.5rem; } }
+
+/*# sourceMappingURL=nav.css.map */

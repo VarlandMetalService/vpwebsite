@@ -1,5 +1,5 @@
 load_video = ->
-  header = $("#vp-cta video")
+  header = $("#vp-header video")
   width = $(window).width()
   if header.length > 0 && width >= 768
     header.html("<source src=\"" + header.data("video") + "\" type=\"video/mp4\">")
@@ -8,8 +8,7 @@ rem = ->
   html = document.getElementsByTagName('html')[0]
   return parseInt(window.getComputedStyle(html)['fontSize'])
 
-set_borders = ->
-  console.log "Running set_borders"
+set_up_cards = ->
   card_tops = $(".vp-cta-card-image-overlay")
   card_tops.each (index, element) =>
     width = $(element).outerWidth()
@@ -40,8 +39,7 @@ $ ->
       992: owl_lg
     owl_options =
       responsive: owl_breakpoints
-      margin: 2 * rem()
-      onResized: set_borders
+      # onResized: set_up_cards
     $(".owl-carousel").owlCarousel(owl_options);
   load_video()
-  set_borders()
+  # set_up_cards()

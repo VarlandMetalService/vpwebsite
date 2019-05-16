@@ -2,29 +2,110 @@
  * Import variables.
  */
 
- @import "variables";
+@import "variables";
 
- /**
-  * Variable definitions.
-  */
+/**
+ * Variable definitions.
+ */
+
+// Image header.
+$image-header-content-height-md: 12rem;
+$image-header-content-height-lg: 12rem;
+$image-header-content-height-xl: 12rem;
+$image-shape-width-xl: 2rem;
+$image-shape-width-md: ($image-header-content-height-md / $image-header-content-height-xl) * $image-shape-width-xl;
+$image-shape-width-lg: ($image-header-content-height-lg / $image-header-content-height-xl) * $image-shape-width-xl;
 
 // Video header.
-$video-header-content-height-md: 19rem;
-$video-header-content-height-lg: 16rem;
-$video-header-content-height-xl: 14rem;
-$video-shape-width-md: ($video-header-content-height-md / $video-header-content-height-xl) * 2rem;
-$video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-height-xl) * 2rem;
+$video-header-content-height-md: 21rem;
+$video-header-content-height-lg: 18rem;
+$video-header-content-height-xl: 16rem;
 $video-shape-width-xl: 2rem;
+$video-shape-width-md: ($video-header-content-height-md / $video-header-content-height-xl) * $video-shape-width-xl;
+$video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-height-xl) * $video-shape-width-xl;
 
- /**
-  * Extra small screen size.
-  */
+/**
+ * Extra small screen size.
+ */
 
-#vp-cta {
+#vp-header {
 
     background-image: linear-gradient(to bottom, $light-gradient-top, $light-gradient-bottom);
     overflow: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1.75rem;
+
+    .vp-image-header {
+
+        @include shadow(0px 0 2px 0 #000);
+
+        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;    
+        color: #fff;
+        margin-bottom: 2rem;
+        overflow: auto;
+
+        .vp-image-header-left-overlay-bg, .vp-image-header-right-overlay-bg, .vp-image-header-left-overlay-fg, .vp-image-header-right-overlay-fg {
+
+            @extend %abs-full;
+
+        }
+
+        .vp-image-header-left-overlay-fg {
+
+            @extend %ltr-gradient;
+
+        }
+
+        .vp-image-header-left-overlay-bg {
+
+            @extend %abs-left;
+
+            background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+            display: none;
+            z-index: 1;
+            
+        }
+
+        .vp-image-header-right-overlay-bg {
+
+            @extend %abs-right;
+
+            background: url(../images/50.png) center center repeat;
+            display: none;
+            z-index: 1;
+            
+        }
+
+        .vp-image-header-text {
+
+            margin: 1rem auto;
+            text-align: center;
+            z-index: 2;
+
+            h1 {
+
+                @extend %brand-font-bold;
+
+                font-size: 2.5rem;
+                line-height: 1;
+                margin-bottom: 0;
+                text-transform: uppercase;
+
+            }
+
+            p {
+
+                @extend %brand-font-light;
+                
+                font-size: 1.25rem;
+                line-height: 1.25;
+                margin-bottom: 0;
+                margin-top: 0.25rem;
+
+            }
+            
+        }
+
+    }
 
     .vp-cta-video-header {
 
@@ -123,14 +204,21 @@ $video-shape-width-xl: 2rem;
     
 }
 
+#vp-card-container {
+
+    padding: 0;
+    margin: 0;
+
+}
+
 .vp-cta-container {
 
-    margin: 0.25rem 0;
+    padding: 0.25rem 1rem;
 
     .card {
 
         @extend %brand-font-book;
-        @include shadow(0 0 2px 0 #000);
+        @include shadow(0px 0 2px 0 #000);
 
         background: #000;
         border: none !important;
@@ -142,18 +230,6 @@ $video-shape-width-xl: 2rem;
     .card-img-top {
 
         border-radius: 0 !important;
-        position: relative;
-
-        .vp-cta-card-image-overlay {
-
-            @extend %abs-full;
-
-            border-bottom: 2rem solid #000;
-            border-left: 1rem solid transparent;
-            border-right: 1rem solid transparent;
-            border-top: 2rem solid #000;
-
-        }
 
     }
 
@@ -186,7 +262,7 @@ $video-shape-width-xl: 2rem;
         a {
 
             @extend %brand-font-book;
-            @extend %ltr-gradient-half;
+            @extend %ltr-gradient;
 
             color: #fff;
             display: block;
@@ -215,7 +291,45 @@ $video-shape-width-xl: 2rem;
 
 @media (min-width: $screen-md) {
 
-    #vp-cta {
+    #vp-header {
+
+        .vp-image-header {
+
+            background: transparent url(../images/bg.jpg) no-repeat right center;
+            background-size: cover;
+            height: $image-header-content-height-md;
+
+            .vp-image-header-left-overlay-bg, .vp-image-header-right-overlay-bg {
+    
+                display: block;
+    
+            }
+
+            .vp-image-header-right-overlay-fg {
+    
+                border-bottom: ($image-header-content-height-md / 2) solid transparent;
+                border-left: $image-shape-width-md solid #000;
+                border-top: ($image-header-content-height-md / 2) solid transparent;
+    
+            }
+
+            .vp-image-header-text {
+
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                left: 0;
+                margin: 0;
+                padding: 1rem 2rem;
+                position: absolute;
+                right: 50%;
+                text-align: left;
+                top: 0;
+
+            }
+
+        }
 
         .vp-cta-video-header {
 
@@ -233,7 +347,6 @@ $video-shape-width-xl: 2rem;
     
                 border-bottom: ($video-header-content-height-md / 2) solid transparent;
                 border-left: $video-shape-width-md solid #000;
-                border-right: $video-shape-width-md solid #000;
                 border-top: ($video-header-content-height-md / 2) solid transparent;
     
             }
@@ -265,7 +378,21 @@ $video-shape-width-xl: 2rem;
 
 @media (min-width: $screen-lg) {
 
-    #vp-cta {
+    #vp-header {
+
+        .vp-image-header {
+
+            height: $image-header-content-height-lg;
+
+            .vp-image-header-right-overlay-fg {
+    
+                border-bottom: ($image-header-content-height-lg / 2) solid transparent;
+                border-left: $image-shape-width-lg solid #000;
+                border-top: ($image-header-content-height-lg / 2) solid transparent;
+    
+            }
+
+        }
 
         .vp-cta-video-header {
 
@@ -275,7 +402,6 @@ $video-shape-width-xl: 2rem;
     
                 border-bottom: ($video-header-content-height-lg / 2) solid transparent;
                 border-left: $video-shape-width-lg solid #000;
-                border-right: $video-shape-width-lg solid #000;
                 border-top: ($video-header-content-height-lg / 2) solid transparent;
     
             }
@@ -287,12 +413,26 @@ $video-shape-width-xl: 2rem;
 }
 
 /**
- * Large screen size.
+ * Extra large screen size.
  */
 
 @media (min-width: $screen-xl) {
 
-    #vp-cta {
+    #vp-header {
+
+        .vp-image-header {
+
+            height: $image-header-content-height-xl;
+
+            .vp-image-header-right-overlay-fg {
+    
+                border-bottom: ($image-header-content-height-xl / 2) solid transparent;
+                border-left: $image-shape-width-xl solid #000;
+                border-top: ($image-header-content-height-xl / 2) solid transparent;
+    
+            }
+
+        }
 
         .vp-cta-video-header {
 
@@ -302,7 +442,6 @@ $video-shape-width-xl: 2rem;
     
                 border-bottom: ($video-header-content-height-xl / 2) solid transparent;
                 border-left: $video-shape-width-xl solid #000;
-                border-right: $video-shape-width-xl solid #000;
                 border-top: ($video-header-content-height-xl / 2) solid transparent;
     
             }
