@@ -4,7 +4,7 @@
 /**
  * Variable definitions.
  */
-#vp-header .vp-image-header .vp-image-header-left-overlay-bg, #vp-header .vp-image-header .vp-image-header-right-overlay-bg, #vp-header .vp-image-header .vp-image-header-left-overlay-fg, #vp-header .vp-image-header .vp-image-header-right-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-bg, #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-bg, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-fg {
+#vp-header-overlay, #vp-header .vp-image-header .vp-image-header-left-overlay-bg, #vp-header .vp-image-header .vp-image-header-right-overlay-bg, #vp-header .vp-image-header .vp-image-header-left-overlay-fg, #vp-header .vp-image-header .vp-image-header-right-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-bg, #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-bg, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-fg {
   bottom: 0;
   height: 100%;
   left: 0;
@@ -37,10 +37,13 @@
   font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 #vp-header .vp-image-header .vp-image-header-text h1, #vp-header .vp-cta-video-header .vp-cta-video-text p a, .vp-cta-container .card-title, .vp-cta-container .card-footer a {
-  font-family: GothamCondensed-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: GothamCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-#vp-header .vp-image-header .vp-image-header-left-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-fg, .vp-cta-container .card-footer a {
+#vp-header .vp-image-header .vp-image-header-left-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-fg {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
+
+.vp-cta-container .card-footer a {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
 
 /**
  * Web font definitions.
@@ -71,24 +74,27 @@
 /**
  * Extra small screen size.
  */
+#vp-header-overlay {
+  background: transparent url(../images/pattern.png) 50% 50%/55px 55px repeat; }
+
 #vp-header {
   background-image: linear-gradient(to bottom, #888888, #fff);
   overflow: auto;
-  padding: 2rem 1rem 1.75rem; }
+  padding: 2rem 1rem 1.75rem;
+  position: relative; }
   #vp-header .vp-image-header {
     -webkit-box-shadow: 0px 0 2px 0 #000;
     -moz-box-shadow: 0px 0 2px 0 #000;
     box-shadow: 0px 0 2px 0 #000;
-    background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     color: #fff;
     margin-bottom: 2rem;
     overflow: auto; }
     #vp-header .vp-image-header .vp-image-header-left-overlay-bg {
-      background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+      background: url(../images/texture.png) 50% 50%/6px 6px repeat;
       display: none;
       z-index: 1; }
     #vp-header .vp-image-header .vp-image-header-right-overlay-bg {
-      background: url(../images/50.png) center center repeat;
       display: none;
       z-index: 1; }
     #vp-header .vp-image-header .vp-image-header-text {
@@ -109,7 +115,7 @@
     -webkit-box-shadow: 0px 0 2px 0 #000;
     -moz-box-shadow: 0px 0 2px 0 #000;
     box-shadow: 0px 0 2px 0 #000;
-    background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     color: #fff;
     margin-bottom: 1.75rem;
     overflow: auto; }
@@ -128,11 +134,10 @@
         width: auto;
         z-index: -1; }
     #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-bg {
-      background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+      background: url(../images/texture.png) 50% 50%/6px 6px repeat;
       display: none;
       z-index: 1; }
     #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-bg {
-      background: url(../images/50.png) center center repeat;
       display: none;
       z-index: 1; }
     #vp-header .vp-cta-video-header .vp-cta-video-text {
@@ -144,7 +149,10 @@
         text-align: center; }
         #vp-header .vp-cta-video-header .vp-cta-video-text p a {
           color: #df151a;
-          text-decoration: none; }
+          text-decoration: none;
+          text-transform: uppercase; }
+          #vp-header .vp-cta-video-header .vp-cta-video-text p a:hover i {
+            color: #fff; }
       #vp-header .vp-cta-video-header .vp-cta-video-text p:last-child {
         margin-bottom: 0; }
 
@@ -173,7 +181,7 @@
     font-size: 1.25rem;
     line-height: 1.2; }
   .vp-cta-container .card-footer {
-    background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     border: none !important;
     overflow: auto;
     padding: 0;

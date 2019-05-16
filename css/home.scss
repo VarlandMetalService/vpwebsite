@@ -28,17 +28,26 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
  * Extra small screen size.
  */
 
+#vp-header-overlay {
+
+    @extend %abs-full;
+
+    background: transparent url(../images/pattern.png) 50% 50%/55px 55px repeat;
+
+}
+
 #vp-header {
 
     background-image: linear-gradient(to bottom, $light-gradient-top, $light-gradient-bottom);
     overflow: auto;
     padding: 2rem 1rem 1.75rem;
+    position: relative;
 
     .vp-image-header {
 
         @include shadow(0px 0 2px 0 #000);
 
-        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;    
+        background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
         margin-bottom: 2rem;
         overflow: auto;
@@ -59,7 +68,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             @extend %abs-left;
 
-            background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+            background: url(../images/texture.png) 50% 50%/6px 6px repeat;
             display: none;
             z-index: 1;
             
@@ -69,7 +78,6 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             @extend %abs-right;
 
-            background: url(../images/50.png) center center repeat;
             display: none;
             z-index: 1;
             
@@ -83,7 +91,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             h1 {
 
-                @extend %brand-font-bold;
+                @extend %brand-font-medium;
 
                 font-size: 2.5rem;
                 line-height: 1;
@@ -111,7 +119,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         @include shadow(0px 0 2px 0 #000);
 
-        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;    
+        background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
         margin-bottom: 1.75rem;
         overflow: auto;
@@ -154,7 +162,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             @extend %abs-left;
 
-            background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+            background: url(../images/texture.png) 50% 50%/6px 6px repeat;
             display: none;
             z-index: 1;
             
@@ -164,7 +172,6 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             @extend %abs-right;
 
-            background: url(../images/50.png) center center repeat;
             display: none;
             z-index: 1;
             
@@ -183,10 +190,17 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
                 a {
 
-                    @extend %brand-font-bold;
+                    @extend %brand-font-medium;
 
                     color: $brand-red;
                     text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover i {
+
+                        color: #fff;
+
+                    }
 
                 }
 
@@ -235,7 +249,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     .card-title {
 
-        @extend %brand-font-bold;
+        @extend %brand-font-medium;
 
         font-size: 2rem;
         line-height: 1;
@@ -253,7 +267,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     .card-footer {
 
-        background: url(../images/texture.jpg) 50% 50%/6px 6px repeat;
+        background: url(../images/texture.png) 50% 50%/6px 6px repeat;
         border: none !important;
         overflow: auto;
         padding: 0;
@@ -261,8 +275,8 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         a {
 
-            @extend %brand-font-bold;
-            @extend %ltr-gradient;
+            @extend %brand-font-medium;
+            @extend %ltr-gradient-half;
 
             color: $brand-red;
             display: block;
