@@ -261,10 +261,10 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         a {
 
-            @extend %brand-font-book;
+            @extend %brand-font-bold;
             @extend %ltr-gradient;
 
-            color: #fff;
+            color: $brand-red;
             display: block;
             font-size: 1.5rem;
             padding: 0.75rem 1rem;
@@ -275,7 +275,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             
             &:hover i {
 
-                color: $brand-red;
+                color: #fff;
 
             }
 

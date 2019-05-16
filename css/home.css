@@ -33,10 +33,10 @@
 #vp-header .vp-image-header .vp-image-header-text p {
   font-family: GothamCondensed-Light, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-.vp-cta-container .card, .vp-cta-container .card-footer a {
+.vp-cta-container .card {
   font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-#vp-header .vp-image-header .vp-image-header-text h1, #vp-header .vp-cta-video-header .vp-cta-video-text p a, .vp-cta-container .card-title {
+#vp-header .vp-image-header .vp-image-header-text h1, #vp-header .vp-cta-video-header .vp-cta-video-text p a, .vp-cta-container .card-title, .vp-cta-container .card-footer a {
   font-family: GothamCondensed-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 #vp-header .vp-image-header .vp-image-header-left-overlay-fg, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-fg, .vp-cta-container .card-footer a {
@@ -72,7 +72,7 @@
  * Extra small screen size.
  */
 #vp-header {
-  background-image: linear-gradient(to bottom, #cccccc, #fff);
+  background-image: linear-gradient(to bottom, #888888, #fff);
   overflow: auto;
   padding: 2rem 1rem 1.75rem; }
   #vp-header .vp-image-header {
@@ -179,7 +179,7 @@
     padding: 0;
     position: relative; }
     .vp-cta-container .card-footer a {
-      color: #fff;
+      color: #df151a;
       display: block;
       font-size: 1.5rem;
       padding: 0.75rem 1rem;
@@ -188,7 +188,7 @@
       text-shadow: 0px 0px 3px #000000;
       text-transform: uppercase; }
       .vp-cta-container .card-footer a:hover i {
-        color: #df151a; }
+        color: #fff; }
 
 /**
  * Medium screen size.
