@@ -46,6 +46,7 @@ body {
  #vp-rfq-button {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
     @include shadow(0px 0 2px 0 #000);
 
     background-color: $brand-red;
@@ -58,7 +59,6 @@ body {
     position: fixed;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0px 0px 2px #000000;
     text-transform: uppercase;
     top: 50%;
     z-index: 99999;

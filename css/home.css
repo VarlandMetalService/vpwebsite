@@ -37,6 +37,12 @@
 .vp-cta-container .card-footer a {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
 
+#vp-header .vp-image-header .vp-image-header-text h1, #vp-header .vp-image-header .vp-image-header-text p, #vp-header .vp-cta-video-header .vp-cta-video-text p, .vp-cta-container .card-footer a {
+  text-shadow: 0px 0px 3px #000; }
+
+#vp-header .vp-image-header, #vp-header .vp-image-header .vp-image-header-left-overlay-bg, #vp-header .vp-cta-video-header, #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-bg, .vp-cta-container .card-footer {
+  background: url(../images/texture.png) 50% 50%/6px 6px repeat; }
+
 /**
  * Web font definitions.
  */
@@ -78,12 +84,10 @@
     -webkit-box-shadow: 0px 0 2px 0 #000;
     -moz-box-shadow: 0px 0 2px 0 #000;
     box-shadow: 0px 0 2px 0 #000;
-    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     color: #fff;
     height: 12rem;
     overflow: auto; }
     #vp-header .vp-image-header .vp-image-header-left-overlay-bg {
-      background: url(../images/texture.png) 50% 50%/6px 6px repeat;
       z-index: 1; }
     #vp-header .vp-image-header .vp-image-header-right-overlay-bg {
       display: none;
@@ -105,19 +109,16 @@
         font-size: 2.5rem;
         line-height: 1;
         margin-bottom: 0;
-        text-shadow: 0px 0px 3px #000000;
         text-transform: uppercase; }
       #vp-header .vp-image-header .vp-image-header-text p {
         font-size: 1.25rem;
         line-height: 1.25;
         margin-bottom: 0;
-        margin-top: 0.25rem;
-        text-shadow: 0px 0px 3px #000000; }
+        margin-top: 0.25rem; }
   #vp-header .vp-cta-video-header {
     -webkit-box-shadow: 0px 0 2px 0 #000;
     -moz-box-shadow: 0px 0 2px 0 #000;
     box-shadow: 0px 0 2px 0 #000;
-    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     color: #fff;
     height: 21rem;
     margin-bottom: 1.75rem;
@@ -137,7 +138,6 @@
         width: auto;
         z-index: -1; }
     #vp-header .vp-cta-video-header .vp-cta-video-left-overlay-bg {
-      background: url(../images/texture.png) 50% 50%/6px 6px repeat;
       z-index: 1; }
     #vp-header .vp-cta-video-header .vp-cta-video-right-overlay-bg {
       display: none;
@@ -157,8 +157,7 @@
       #vp-header .vp-cta-video-header .vp-cta-video-text p {
         font-size: 1.5rem;
         line-height: 1.25;
-        text-align: center;
-        text-shadow: 0px 0px 3px #000000; }
+        text-align: center; }
         #vp-header .vp-cta-video-header .vp-cta-video-text p a {
           color: #df151a;
           text-decoration: none;
@@ -193,7 +192,6 @@
     font-size: 1.25rem;
     line-height: 1.2; }
   .vp-cta-container .card-footer {
-    background: url(../images/texture.png) 50% 50%/6px 6px repeat;
     border: none !important;
     overflow: auto;
     padding: 0;
@@ -205,7 +203,6 @@
       padding: 0.75rem 1rem;
       text-align: center;
       text-decoration: none;
-      text-shadow: 0px 0px 3px #000000;
       text-transform: uppercase; }
       .vp-cta-container .card-footer a:hover i {
         color: #fff; }

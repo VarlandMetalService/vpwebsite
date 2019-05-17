@@ -8,8 +8,6 @@
   * Variable definitions.
   */
  
- // Image header.
- 
  /**
   * Extra small screen size.
   */
@@ -17,6 +15,7 @@
 #vp-testimonial {
 
   @extend %brand-font-book;
+  @include shadow(0px 0 2px 0 #000);
 
   background: url(../images/testimonial.jpg) no-repeat center center;
   background-size: cover;
@@ -24,6 +23,7 @@
   margin-top: 50rem;
   position: relative;
   text-align: center;
+  z-index: 700;
 
   .vp-testimonial-content {
 
@@ -43,12 +43,12 @@
   h5 {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
 
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 0;
     margin-top: 2rem;
-    text-shadow: 0px 0px 3px #000000;
 
   }
 
@@ -59,18 +59,20 @@
 
     i {
 
+      @extend %text-shadow-default;
+
       color: rgba(255, 255, 255, 0.5);
-      text-shadow: 0px 0px 3px #000000;
 
     }
 
     p {
 
+      @extend %text-shadow-default;
+
       font-style: italic;
       margin-bottom: 0;
       margin-left: 2rem;
       margin-right: 2rem;
-      text-shadow: 0px 0px 3px #000000;
 
     }
 

@@ -1,0 +1,39 @@
+/**
+ * Import variables.
+ */
+
+ @import "variables";
+
+ /**
+  * Variable definitions.
+  */
+ 
+ /**
+  * Extra small screen size.
+  */
+
+#vp-footer {
+
+  @extend %textured-background;
+
+  color: #fff;
+  overflow: auto;
+  position: relative;
+  z-index: 500;
+
+}
+
+#vp-footer-content {
+
+  @extend %textured-background;
+
+  position: relative;
+
+}
+
+.vp-footer-overlay {
+
+  @extend %abs-full;
+  @extend %ltr-gradient;
+
+}

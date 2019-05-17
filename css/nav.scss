@@ -24,9 +24,9 @@ body {
 
 #vp-site-nav {
 
-  @include shadow(0px 3px 5px -4px #000);
+  @extend %textured-background;
+  @include shadow(0px 0 2px 0 #000);
 
-  background: url(../images/texture.png) 50% 50%/6px 6px repeat;
   border-bottom: 0.25rem solid $brand-red;
   min-height: $navbar-height-xs;
   padding: 1rem;
@@ -82,11 +82,11 @@ body {
   .nav-link {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
 
     color: #fff !important;
     line-height: 1;
     padding-bottom: 0;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase;
 
   }
@@ -116,19 +116,20 @@ body {
 .dropdown-menu {
 
   @extend %brand-font-medium;
+  @extend %textured-background;
   @include shadow(inset 0px 0 0.25rem 0 #000);
 
-  background: url(../images/texture.png) 50% 50%/6px 6px repeat;
   border-radius: 0.25rem !important;
   color: #fff;
   padding: 1rem 0;
 
   .vp-industry {
 
+    @extend %text-shadow-default;
+
     font-size: 1.25rem;
     margin-top: 0.5rem;
     text-align: center;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase;
 
   }
@@ -151,12 +152,12 @@ body {
 
   h5 {
 
+    @extend %text-shadow-default;
     @include shadow(0px 3px 5px -4px #000);
 
     border-bottom: 0.1rem solid $brand-red;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase;
 
   }
@@ -164,10 +165,10 @@ body {
   p {
 
     @extend %brand-font-book;
+    @extend %text-shadow-default;
 
     font-size: 1.25rem;
     line-height: 1.2;
-    text-shadow: 0px 0px 3px #000000;
 
     &:last-child {
       
@@ -180,12 +181,12 @@ body {
   label {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
 
     color: #fff;
     font-size: 1.25rem;
     line-height: 1;
     margin-bottom: 0.25rem;
-    text-shadow: 0px 0px 3px #000000;
 
   }
 
@@ -204,10 +205,10 @@ body {
   button {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
 
     color: #fff;
     font-size: 1.25rem;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase;
 
   }
@@ -215,11 +216,11 @@ body {
   a {
 
     @extend %brand-font-medium;
+    @extend %text-shadow-default;
 
     color: #fff;
     font-size: 1.25rem;
     text-decoration: none;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase;
 
     &:hover {
@@ -271,7 +272,7 @@ body {
 
   .dropdown-menu {
 
-    @include shadow(0px 3px 5px -4px #000);
+    @include shadow(0px 2px 2px -2px #000);
 
     border: none;
     border-bottom: 0.25rem solid $brand-red;

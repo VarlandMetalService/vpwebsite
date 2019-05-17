@@ -49,9 +49,9 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     .vp-image-header {
 
+        @extend %textured-background;
         @include shadow(0px 0 2px 0 #000);
 
-        background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
         height: $image-header-content-height-xs;
         overflow: auto;
@@ -70,7 +70,8 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-image-header-left-overlay-bg {
 
-            background: url(../images/texture.png) 50% 50%/6px 6px repeat;
+            @extend %textured-background;
+
             z-index: 1;
             
         }
@@ -102,11 +103,11 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             h1 {
 
                 @extend %brand-font-medium;
+                @extend %text-shadow-default;
 
                 font-size: 2.5rem;
                 line-height: 1;
                 margin-bottom: 0;
-                text-shadow: 0px 0px 3px #000000;
                 text-transform: uppercase;
 
             }
@@ -114,12 +115,12 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             p {
 
                 @extend %brand-font-light;
+                @extend %text-shadow-default;
                 
                 font-size: 1.25rem;
                 line-height: 1.25;
                 margin-bottom: 0;
                 margin-top: 0.25rem;
-                text-shadow: 0px 0px 3px #000000;
 
             }
             
@@ -129,9 +130,9 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     .vp-cta-video-header {
 
+        @extend %textured-background;
         @include shadow(0px 0 2px 0 #000);
 
-        background: url(../images/texture.png) 50% 50%/6px 6px repeat;    
         color: #fff;
         height: $video-header-content-height-xs;
         margin-bottom: 1.75rem;
@@ -173,7 +174,8 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
         .vp-cta-video-left-overlay-bg {
 
-            background: url(../images/texture.png) 50% 50%/6px 6px repeat;
+            @extend %textured-background;
+
             z-index: 1;
             
         }
@@ -202,11 +204,12 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             z-index: 2;
 
             p {
+
+                @extend %text-shadow-default;
                 
                 font-size: 1.5rem;
                 line-height: 1.25;
                 text-align: center;
-                text-shadow: 0px 0px 3px #000000;
 
                 a {
 
@@ -287,7 +290,8 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     .card-footer {
 
-        background: url(../images/texture.png) 50% 50%/6px 6px repeat;
+        @extend %textured-background;
+
         border: none !important;
         overflow: auto;
         padding: 0;
@@ -297,6 +301,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
             @extend %brand-font-medium;
             @extend %ltr-gradient-half;
+            @extend %text-shadow-default;
 
             color: $brand-red;
             display: block;
@@ -304,7 +309,6 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
             padding: 0.75rem 1rem;
             text-align: center;
             text-decoration: none;
-            text-shadow: 0px 0px 3px #000000;
             text-transform: uppercase;
             
             &:hover i {

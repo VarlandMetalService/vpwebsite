@@ -22,6 +22,12 @@
 #vp-site-nav .vp-nav-overlay {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
 
+.nav-item .nav-link, .dropdown-menu .vp-industry, .dropdown-menu h5, .dropdown-menu p, .dropdown-menu label, .dropdown-menu button, .dropdown-menu a {
+  text-shadow: 0px 0px 3px #000; }
+
+#vp-site-nav, .dropdown-menu {
+  background: url(../images/texture.png) 50% 50%/6px 6px repeat; }
+
 /**
  * Web font definitions.
  */
@@ -55,10 +61,9 @@ body {
   padding-top: 6rem; }
 
 #vp-site-nav {
-  -webkit-box-shadow: 0px 3px 5px -4px #000;
-  -moz-box-shadow: 0px 3px 5px -4px #000;
-  box-shadow: 0px 3px 5px -4px #000;
-  background: url(../images/texture.png) 50% 50%/6px 6px repeat;
+  -webkit-box-shadow: 0px 0 2px 0 #000;
+  -moz-box-shadow: 0px 0 2px 0 #000;
+  box-shadow: 0px 0 2px 0 #000;
   border-bottom: 0.25rem solid #df151a;
   min-height: 6rem;
   padding: 1rem; }
@@ -80,7 +85,6 @@ body {
   color: #fff !important;
   line-height: 1;
   padding-bottom: 0;
-  text-shadow: 0px 0px 3px #000000;
   text-transform: uppercase; }
 
 #vp-site-primary-nav .nav-link {
@@ -93,7 +97,6 @@ body {
   -webkit-box-shadow: inset 0px 0 0.25rem 0 #000;
   -moz-box-shadow: inset 0px 0 0.25rem 0 #000;
   box-shadow: inset 0px 0 0.25rem 0 #000;
-  background: url(../images/texture.png) 50% 50%/6px 6px repeat;
   border-radius: 0.25rem !important;
   color: #fff;
   padding: 1rem 0; }
@@ -101,7 +104,6 @@ body {
     font-size: 1.25rem;
     margin-top: 0.5rem;
     text-align: center;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase; }
   .dropdown-menu .list-unstyled li {
     line-height: 1; }
@@ -114,20 +116,17 @@ body {
     border-bottom: 0.1rem solid #df151a;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase; }
   .dropdown-menu p {
     font-size: 1.25rem;
-    line-height: 1.2;
-    text-shadow: 0px 0px 3px #000000; }
+    line-height: 1.2; }
     .dropdown-menu p:last-child {
       margin-bottom: 0; }
   .dropdown-menu label {
     color: #fff;
     font-size: 1.25rem;
     line-height: 1;
-    margin-bottom: 0.25rem;
-    text-shadow: 0px 0px 3px #000000; }
+    margin-bottom: 0.25rem; }
   .dropdown-menu small {
     font-size: 1rem; }
   .dropdown-menu input, .dropdown-menu textarea {
@@ -135,13 +134,11 @@ body {
   .dropdown-menu button {
     color: #fff;
     font-size: 1.25rem;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase; }
   .dropdown-menu a {
     color: #fff;
     font-size: 1.25rem;
     text-decoration: none;
-    text-shadow: 0px 0px 3px #000000;
     text-transform: uppercase; }
     .dropdown-menu a:hover {
       color: #df151a; }
@@ -166,9 +163,9 @@ body {
     position: static; }
 
   .dropdown-menu {
-    -webkit-box-shadow: 0px 3px 5px -4px #000;
-    -moz-box-shadow: 0px 3px 5px -4px #000;
-    box-shadow: 0px 3px 5px -4px #000;
+    -webkit-box-shadow: 0px 2px 2px -2px #000;
+    -moz-box-shadow: 0px 2px 2px -2px #000;
+    box-shadow: 0px 2px 2px -2px #000;
     border: none;
     border-bottom: 0.25rem solid #df151a;
     border-radius: 0 !important;
