@@ -15,8 +15,10 @@
 #vp-footer {
 
   @extend %textured-background;
+  @include shadow(0px 0 2px 0 #000);
 
   color: #fff;
+  margin-top: 50rem;
   overflow: auto;
   position: relative;
   z-index: 500;
@@ -35,5 +37,19 @@
 
   @extend %abs-full;
   @extend %ltr-gradient;
+
+}
+
+/**
+ * Small screen size.
+ */
+
+@media (min-width: $screen-sm) {
+
+  #vp-testimonial + #vp-footer {
+
+    margin-top: 0;
+
+  }
 
 }

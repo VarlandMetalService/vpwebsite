@@ -49,12 +49,23 @@
  * Extra small screen size.
  */
 #vp-footer {
+  -webkit-box-shadow: 0px 0 2px 0 #000;
+  -moz-box-shadow: 0px 0 2px 0 #000;
+  box-shadow: 0px 0 2px 0 #000;
   color: #fff;
+  margin-top: 50rem;
   overflow: auto;
   position: relative;
   z-index: 500; }
 
 #vp-footer-content {
   position: relative; }
+
+/**
+ * Small screen size.
+ */
+@media (min-width: 576px) {
+  #vp-testimonial + #vp-footer {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=footer.css.map */
