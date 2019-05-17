@@ -63,4 +63,10 @@ body {
     top: 50%;
     z-index: 99999;
 
+    &:hover, &:active {
+
+        background: $brand-red url(../images/pattern.png) center center repeat;
+
+    }
+
  }

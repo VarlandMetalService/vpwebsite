@@ -74,5 +74,7 @@ body {
   text-transform: uppercase;
   top: 50%;
   z-index: 99999; }
+  #vp-rfq-button:hover, #vp-rfq-button:active {
+    background: #df151a url(../images/pattern.png) center center repeat; }
 
 /*# sourceMappingURL=vp.css.map */
