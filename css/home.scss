@@ -44,7 +44,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 
     background-image: linear-gradient(to bottom, $light-gradient-top, $light-gradient-bottom);
     overflow: auto;
-    padding: 2.25rem 1rem 1.75rem;
+    padding: 2.25rem 1rem 0;
     position: relative;
 
     .vp-image-header {
@@ -244,7 +244,7 @@ $video-shape-width-lg: ($video-header-content-height-lg / $video-header-content-
 #vp-card-container {
 
     padding: 0;
-    margin: 0;
+    margin: 0 0 1.75rem;
 
 }
 

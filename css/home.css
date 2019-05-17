@@ -78,7 +78,7 @@
 #vp-header {
   background-image: linear-gradient(to bottom, #888888, #fff);
   overflow: auto;
-  padding: 2.25rem 1rem 1.75rem;
+  padding: 2.25rem 1rem 0;
   position: relative; }
   #vp-header .vp-image-header {
     -webkit-box-shadow: 0px 0 2px 0 #000;
@@ -169,7 +169,7 @@
 
 #vp-card-container {
   padding: 0;
-  margin: 0; }
+  margin: 0 0 1.75rem; }
 
 .vp-cta-container {
   padding: 0.25rem 1rem; }

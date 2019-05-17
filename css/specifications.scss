@@ -1,0 +1,91 @@
+/**
+ * Import variables.
+ */
+
+ @import "variables";
+
+ /**
+  * Variable definitions.
+  */
+ 
+ /**
+  * Extra small screen size.
+  */
+
+#vp-specifications-content {
+
+  @extend %brand-font-book;
+  @include shadow(0px 0 2px 0 #000);
+
+  background: #fff;
+  font-size: 1.15rem;
+  overflow: auto;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 0;
+
+  .card {
+
+    @extend %textured-background;
+    @include shadow(0px 0 1px 0 #000);
+
+    border: none;
+    border-radius: 0;
+    color: #fff;
+
+    .card-body {
+
+      @extend %ltr-gradient;
+
+      font-size: 1.35rem;
+
+      h4 {
+    
+        @extend %brand-font-medium;
+        @extend %text-shadow-default;
+
+        color: $brand-red;
+        font-size: 1.75rem;
+    
+      }
+
+      p {
+
+        line-height: 1.25;
+
+      }
+
+      a {
+        
+        @extend %brand-font-medium;
+        @extend %text-shadow-default;
+
+        color: $brand-red;
+        font-size: 1.75rem;
+        text-decoration: none;
+
+        &:hover {
+
+          color: #fff;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  th {
+
+    @extend %brand-font-medium;
+    @extend %text-shadow-default;
+
+    background-color: $brand-red;
+    color: #fff;
+    font-weight: normal;
+    width: 33.33333333333%;
+
+  }
+
+}

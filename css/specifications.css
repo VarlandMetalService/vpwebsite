@@ -4,19 +4,19 @@
 /**
  * Variable definitions.
  */
-.vp-footer-overlay {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%; }
+#vp-specifications-content {
+  font-family: GothamCondensed-Book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-.vp-footer-overlay {
+#vp-specifications-content .card .card-body h4, #vp-specifications-content .card .card-body a, #vp-specifications-content th {
+  font-family: GothamCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+#vp-specifications-content .card .card-body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black); }
 
-#vp-footer, #vp-footer-content {
+#vp-specifications-content .card .card-body h4, #vp-specifications-content .card .card-body a, #vp-specifications-content th {
+  text-shadow: 0px 0px 3px #000; }
+
+#vp-specifications-content .card {
   background: url(../images/texture.png) 50% 50%/6px 6px repeat; }
 
 /**
@@ -48,24 +48,40 @@
 /**
  * Extra small screen size.
  */
-#vp-footer {
+#vp-specifications-content {
   -webkit-box-shadow: 0px 0 2px 0 #000;
   -moz-box-shadow: 0px 0 2px 0 #000;
   box-shadow: 0px 0 2px 0 #000;
-  color: #fff;
-  margin-top: 2rem;
+  background: #fff;
+  font-size: 1.15rem;
   overflow: auto;
+  padding-top: 1rem;
   position: relative;
-  z-index: 500; }
+  z-index: 0; }
+  #vp-specifications-content .card {
+    -webkit-box-shadow: 0px 0 1px 0 #000;
+    -moz-box-shadow: 0px 0 1px 0 #000;
+    box-shadow: 0px 0 1px 0 #000;
+    border: none;
+    border-radius: 0;
+    color: #fff; }
+    #vp-specifications-content .card .card-body {
+      font-size: 1.35rem; }
+      #vp-specifications-content .card .card-body h4 {
+        color: #df151a;
+        font-size: 1.75rem; }
+      #vp-specifications-content .card .card-body p {
+        line-height: 1.25; }
+      #vp-specifications-content .card .card-body a {
+        color: #df151a;
+        font-size: 1.75rem;
+        text-decoration: none; }
+        #vp-specifications-content .card .card-body a:hover {
+          color: #fff; }
+  #vp-specifications-content th {
+    background-color: #df151a;
+    color: #fff;
+    font-weight: normal;
+    width: 33.33333333333%; }
 
-#vp-footer-content {
-  position: relative; }
-
-/**
- * Small screen size.
- */
-@media (min-width: 576px) {
-  #vp-testimonial + #vp-footer {
-    margin-top: 0; } }
-
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=specifications.css.map */
