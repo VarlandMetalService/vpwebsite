@@ -1,0 +1,88 @@
+/**
+ * Import variables.
+ */
+
+ @import "variables";
+
+ /**
+  * Variable definitions.
+  */
+ 
+ // Image header.
+ 
+ /**
+  * Extra small screen size.
+  */
+
+#vp-testimonial {
+
+  @extend %brand-font-book;
+
+  background: url(../images/testimonial.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  margin-top: 50rem;
+  position: relative;
+  text-align: center;
+
+  .vp-testimonial-content {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2rem 0;
+    padding: 0 2rem;
+
+  }
+
+  .container {
+
+    position: relative;
+    z-index: 2;
+
+  }
+
+  h5 {
+
+    @extend %brand-font-medium;
+
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    text-shadow: 0px 0px 3px #000000;
+
+  }
+
+  .vp-testimonial-quote {
+
+    font-size: 1.5rem;
+    margin: 2rem auto;
+
+    i {
+
+      color: rgba(255, 255, 255, 0.5);
+      text-shadow: 0px 0px 3px #000000;
+
+    }
+
+    p {
+
+      font-style: italic;
+      margin-bottom: 0;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      text-shadow: 0px 0px 3px #000000;
+
+    }
+
+  }
+
+}
+
+#vp-testimonial-overlay {
+
+  @extend %abs-full;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+
+}
