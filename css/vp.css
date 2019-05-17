@@ -54,7 +54,7 @@ body {
   color: #fff !important;
   cursor: pointer; }
   .btn-brand:hover, .btn-brand:active {
-    background: #df151a url(../images/pattern.png) center center repeat; }
+    background: #c81317; }
 
 /**
  * Fixed request quote button.
@@ -77,6 +77,6 @@ body {
   top: 50%;
   z-index: 99999; }
   #vp-rfq-button:hover, #vp-rfq-button:active {
-    background: #df151a url(../images/pattern.png) center center repeat; }
+    background: #c81317; }
 
 /*# sourceMappingURL=vp.css.map */

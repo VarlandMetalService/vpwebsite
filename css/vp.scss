@@ -33,7 +33,7 @@ body {
 
     &:hover, &:active {
 
-        background: $brand-red url(../images/pattern.png) center center repeat;
+        background: darken($brand-red, 5%);
 
     }
 
@@ -65,7 +65,7 @@ body {
 
     &:hover, &:active {
 
-        background: $brand-red url(../images/pattern.png) center center repeat;
+        background: darken($brand-red, 5%);
 
     }
 
